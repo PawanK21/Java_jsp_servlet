@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetJobLinks - Find Your Dream Job</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Get<span>Job</span>Links</a>
+            <div class="auth-buttons">
+                <a href="aboutUs.jsp"><button class="btn login-btn" id="loginBtn">About Us</button></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="SDE.jsp" data-category="software">Software Development</a></li>
+                <li><a href="DA.jsp" data-category="data">Data Analytics</a></li>
+                <li><a href="DevOps.jsp" data-category="devops">DevOps/SRE</a></li>
+                <li><a href="DataScience.jsp" data-category="ai">AI/ML</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Find Your Dream Tech Job</h1>
+        <p>Connect with top companies hiring for software development, data analytics, DevOps, and AI/ML roles.</p>
+        <a href ="#"><button class="btn register-btn" style="padding: 0.8rem 2rem; font-size: 1rem;">Get Started</button></a>
+    </section>
+
+    <!-- Image Carousel -->
+    <section class="carousel-container">
+        <h2 class="carousel-title">Explore Tech Careers</h2>
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="carousel-slide active">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'><rect width='800' height='400' fill='%233498db'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>Software Development</text></svg>" alt="Software Development">
+                    <div class="slide-content">
+                        <h3>Software Development</h3>
+                        <p>Build innovative applications and systems that power our digital world. Explore roles in frontend, backend, full-stack, and mobile development.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'><rect width='800' height='400' fill='%232ecc71'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>Data Analytics</text></svg>" alt="Data Analytics">
+                    <div class="slide-content">
+                        <h3>Data Analytics</h3>
+                        <p>Transform raw data into actionable insights. Work with big data, visualization tools, and statistical analysis to drive business decisions.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'><rect width='800' height='400' fill='%239b59b6'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>DevOps/SRE</text></svg>" alt="DevOps/SRE">
+                    <div class="slide-content">
+                        <h3>DevOps/SRE</h3>
+                        <p>Bridge development and operations to ensure reliable, scalable systems. Master CI/CD, infrastructure as code, and site reliability engineering.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'><rect width='800' height='400' fill='%23e74c3c'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>AI/ML</text></svg>" alt="AI/ML">
+                    <div class="slide-content">
+                        <h3>AI/ML</h3>
+                        <p>Create intelligent systems that learn and adapt. Work on machine learning models, neural networks, and cutting-edge AI applications.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide active">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'><rect width='800' height='400' fill='%233498db'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>Software Development</text></svg>" alt="Software Development">
+                    <div class="slide-content">
+                        <h3>DevOps/SRE</h3>
+                        <p>Build innovative applications and systems that power our digital world. Explore roles in frontend, backend, full-stack, and mobile development.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'><rect width='800' height='400' fill='%232ecc71'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>Data Analytics</text></svg>" alt="Data Analytics">
+                    <div class="slide-content">
+                        <h3>AI/ML</h3>
+                        <p>Transform raw data into actionable insights. Work with big data, visualization tools, and statistical analysis to drive business decisions.</p>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn next">&#10095;</button>
+            <div class="carousel-indicators">
+                <div class="indicator active"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Categories -->
+    <section class="categories">
+        <h2>Browse Job Categories</h2>
+        <div class="category-cards">
+            <div class="category-card">
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='160' viewBox='0 0 300 160'><rect width='300' height='160' fill='%233498db'/><text x='50%' y='50%' font-family='Arial' font-size='18' fill='white' text-anchor='middle' dominant-baseline='middle'>Software Development</text></svg>" alt="Software Development">
+                <div class="category-info">
+                    <h3>Software Development</h3>
+                    <p>Frontend, Backend, Full-Stack, Mobile, and more</p>
+                    <a href="SDE.jsp" class="category-link">View Jobs →</a>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='160' viewBox='0 0 300 160'><rect width='300' height='160' fill='%232ecc71'/><text x='50%' y='50%' font-family='Arial' font-size='18' fill='white' text-anchor='middle' dominant-baseline='middle'>Data Analytics</text></svg>" alt="Data Analytics">
+                <div class="category-info">
+                    <h3>Data Analytics</h3>
+                    <p>Data Science, Business Intelligence, Data Engineering</p>
+                    <a href="DA.jsp" class="category-link">View Jobs →</a>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='160' viewBox='0 0 300 160'><rect width='300' height='160' fill='%239b59b6'/><text x='50%' y='50%' font-family='Arial' font-size='18' fill='white' text-anchor='middle' dominant-baseline='middle'>DevOps/SRE</text></svg>" alt="DevOps/SRE">
+                <div class="category-info">
+                    <h3>DevOps/SRE</h3>
+                    <p>Cloud Infrastructure, CI/CD, Site Reliability</p>
+                    <a href="DevOps.jsp" class="category-link">View Jobs →</a>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='160' viewBox='0 0 300 160'><rect width='300' height='160' fill='%23e74c3c'/><text x='50%' y='50%' font-family='Arial' font-size='18' fill='white' text-anchor='middle' dominant-baseline='middle'>AI/ML</text></svg>" alt="AI/ML">
+                <div class="category-info">
+                    <h3>AI/ML</h3>
+                    <p>Machine Learning, Deep Learning, Computer Vision</p>
+                    <a href="DataScience.jsp" class="category-link">View Jobs →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>GetJobLinks</h3>
+                <ul>
+                    <li><a href="aboutUs.jsp">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a style="color:gray; cursor:default;">Press</a></li>
+                    <li><a style="color:gray; cursor:default;">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>For Job Seekers</h3>
+                <ul>
+                    <li><a href="index.html">Browse Jobs</a></li>
+                    <li><a style="color:gray; cursor:default;">Salary Tools</a></li>
+                    <li><a href="#">Career Advice</a></li>
+                    <li><a href="https://bit.ly/48fe5U5">Resume Builder</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>For Employers</h3>
+                <ul>
+                    <li><a style="color:gray; cursor:default;">Post a Job</a></li>
+                    <li><a style="color:gray; cursor:default;">Search Resumes</a></li>
+                    <li><a style="color:gray; cursor:default;">Pricing</a></li>
+                    <li><a style="color:gray; cursor:default;">Resources</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Connect With Us</h3>
+                <ul>
+                    <li><a href="https://mail.google.com/mail">Email:1005k.pawan@gmail.com</a></li>
+                    <li><a style="color:gray; cursor:default;">Help Center</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/in/pawan-kumar-395722205/">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 GetJobLinks. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+  
+</body>
+</html>
